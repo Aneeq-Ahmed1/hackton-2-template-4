@@ -1,4 +1,5 @@
-import React from 'react'
+import Image from 'next/image'
+import React from 'react' 
 
 const Trending = () => {
   return (
@@ -24,7 +25,7 @@ const Trending = () => {
           <div className="absolute left-[115px] top-[327px] text-[#151875] text-sm font-normal font-['Lato']">
             $26.00
           </div>
-          <img className="w-44 h-44 absolute left-[40px] top-[46px]" src={`/post-3/${item}.svg`} alt="Cantilever Chair" />
+          <Image className="w-44 h-44 absolute left-[40px] top-[46px]" src={`/post-3/${item}.svg`} alt="Cantilever Chair" width={400}height={400} />
         </div>
       </div>
     ))}
@@ -36,7 +37,7 @@ const Trending = () => {
     <div className="text-[#151875] text-2xl font-semibold font-['Josefin Sans']">
       23% off in all products
     </div>
-    <img className="w-52 h-52" src="/post-3/5.svg" alt="Product Image" />
+    <Image className="w-52 h-52" src="/post-3/5.svg" alt="Product Image" width={400}height={400} />
   </div>
 
   {/* Card 2 */}
@@ -44,7 +45,7 @@ const Trending = () => {
     <div className="text-[#151875] text-2xl font-semibold font-['Josefin Sans']">
       23% off in all products
     </div>
-    <img className="w-52 h-52" src="/post-3/6.svg" alt="Product Image" />
+    <Image className="w-52 h-52" src="/post-3/6.svg" alt="Product Image" width={400}height={400} />
   </div>
   <div className="flex flex-col items-center space-y-4">
   {/* Card 1 */}
@@ -60,7 +61,7 @@ const Trending = () => {
         </div>
       </div>
     </div>
-    <img className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/7.svg" />
+    <Image className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/7.svg" alt='post-3' width={400}height={400}/>
   </div>
 
   {/* Card 2 */}
@@ -76,7 +77,7 @@ const Trending = () => {
         </div>
       </div>
     </div>
-    <img className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/8.svg" />
+    <Image className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/8.svg" alt='post8' width={400}height={400} />
   </div>
 
   {/* Card 3 */}
@@ -92,34 +93,10 @@ const Trending = () => {
         </div>
       </div>
     </div>
-    <img className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/9.svg" />
+    <Image className="w-16 h-16 left-[21px] top-[2px] absolute" src="/post-3/9.svg" alt='post-9' width={400}height={400} />
   </div>
 </div>
-{/* <div className="flex justify-center items-center w-full">
-  <div className="text-center text-[#151875] text-5xl font-bold font-['Josefin Sans']">
-    Discount Item
-  </div>
-  
-</div>
-<div className="w-96 h-96 relative">
-  <div className="left-[1px] top-[140px] absolute text-[#151875] text-4xl font-bold font-['Josefin Sans'] leading-10 tracking-wide">20% Discount Of All Products</div>
-  <div className="left-[1px] top-[202px] absolute text-[#fb2e86] text-xl font-normal font-['Josefin Sans'] leading-7 tracking-tight">Eams Sofa Compact</div>
-  <div className="w-48 h-14 left-0 top-[434px] absolute">
-    <div className="w-48 h-14 left-0 top-0 absolute bg-[#fb2e86] rounded-sm" />
-    <div className="w-28 left-[48px] top-[20px] absolute text-white text-base font-normal font-['Josefin Sans'] tracking-tight">Shop Now</div>
-  </div>
-  <div className="w-96 h-12 left-[1px] top-[250px] absolute text-[#b7bacb] text-base font-normal font-['Lato'] leading-loose tracking-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.</div>
-  <div className="left-[23px] top-[327px] absolute text-[#b8b8dc] text-base font-normal font-['Lato'] leading-loose tracking-tight">Material expose like metals</div>
-  <div className="left-[23px] top-[367px] absolute text-[#b8b8dc] text-base font-normal font-['Lato'] leading-loose tracking-tight">Simple neutral colours.</div>
-  <div className="left-[295px] top-[367px] absolute text-[#b8b8dc] text-base font-normal font-['Lato'] leading-loose tracking-tight">Material expose like metals</div>
-  <div className="left-[295px] top-[327px] absolute text-[#b8b8dc] text-base font-normal font-['Lato'] leading-loose tracking-tight">Clear lines and geomatric figures</div>
-  <div className="w-96 h-96 left-[515px] top-0 absolute">
-    <div className="w-96 h-96 left-[114px] top-[81px] absolute bg-[#fcecf1] rounded-full" />
-    <img className="w-96 h-96 left-0 top-0 absolute" src="https://via.placeholder.com/699x597" />
-  </div>
-  <div className="w-6 h-6 left-[266px] top-[332px] absolute" />
-  <div className="w-6 h-6 left-[266px] top-[371px] absolute" />
-</div> */}
+
 
 
 <div className="w-full flex justify-center items-center">
@@ -142,9 +119,9 @@ const Trending = () => {
 
     {/* Shop Now Button */}
     <div className="w-48 h-14 bg-[#fb2e86] rounded-sm mb-8">
-      <div className="w-28 mx-auto text-white text-base font-normal font-['Josefin Sans'] tracking-tight text-center pt-3">
+      <button className="w-28 mx-auto flex justify-center text-white text-base font-normal font-['Josefin Sans'] tracking-tight text-center pt-3">
         Shop Now
-      </div>
+      </button>
     </div>
 
     {/* Description */}
@@ -169,30 +146,54 @@ const Trending = () => {
 
   {/* Image Section inside Circle */}
   <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] bg-[#fcecf1] rounded-full flex justify-center items-center mb-8 sm:mb-0">
-    <img
+    <Image
       className="w-full h-full object-cover rounded-full"
       src="/post-3/10.svg"
       alt="Product"
+      width={400}
+      height={400}
     />
   </div>
 </div>
 </div>
 <div className="text-[#151875] text-5xl p-8 font-bold font-['Josefin Sans']">Top Categories</div>
-{/* <div>
-<img src="/post-3/11.png" alt="aa" />
-<img src="/post-3/12.png" alt="aa" />
-<img src="/post-3/13.png" alt="aa" />
-<img src="/post-3/14.png" alt="aa" />
-</div> */}
-<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
-  <img src="/post-3/11.png" alt="aa" />
-  <img src="/post-3/12.png" alt="aa" />
-  <img src="/post-3/13.png" alt="aa" />
-  <img src="/post-3/14.png" alt="aa" />
-</div>
-<img className="w-full h-full" src="post-3/15.svg" />
 
-<img className="w-96 h-24" src="post-3/16.svg" />
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+  <Image src="/post-3/11.png" alt="aa" width={400}height={400} />
+  <Image src="/post-3/12.png" alt="aa" width={400}height={400}/>
+  <Image src="/post-3/13.png" alt="aa" width={400}height={400}/>
+  <Image src="/post-3/14.png" alt="aa" width={400}height={400}/>
+</div>
+<Image className="w-full h-full" src="post-3/15.svg" alt='post-15' width={400}height={400} />
+
+<Image className="py-6" src="post-3/16.svg" alt='post-16' width={904}height={93}/>
+
+     {/* Leatest Blog */}
+
+<div className="text-[#151875] text-5xl p-8 font-bold font-['Josefin Sans']">Leatest Blog</div>
+
+
+
+
+<div className="flex flex-wrap justify-center space-x-6 space-y-6">
+<Image src={"/post-3/Leatest-1.svg"} alt='product-1' width={384} height={384}/>
+<Image src={"/post-3/Leatest-2.svg"} alt='product-1' width={384} height={384}/>
+<Image src={"/post-3/Leatest-3.svg"} alt='product-1' width={384} height={384}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 </div>
 
 </div>

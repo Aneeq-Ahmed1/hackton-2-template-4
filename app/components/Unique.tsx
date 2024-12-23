@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Unique = () => {
@@ -10,10 +11,12 @@ const Unique = () => {
       style={{ backgroundColor: '#f1f0ff' }} // Inline Debugging
       className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px]  !bg-[#f1f0ff]"
     >
-      <img
+      <Image
         className="absolute w-full h-full object-cover"
         src="/sofa.svg"
         alt="Product Image"
+        width={200}
+        height={200}
       />
     </div>
   </div>

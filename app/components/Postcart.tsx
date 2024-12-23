@@ -28,7 +28,7 @@ const Postcart = () => {
           <div className="absolute left-[115px] top-[327px] text-[#151875] text-sm font-normal font-['Lato']">
             $42.00
           </div>
-          <img className="w-44 h-44 absolute left-[40px] top-[46px]" src={`/post/${item}.svg`} alt="Cantilever Chair" />
+          <Image className="w-44 h-44 absolute left-[40px] top-[46px]" src={`/post/${item}.svg`} alt="Cantilever Chair" width={400}height={400} />
         </div>
       </div>
     ))}
@@ -64,7 +64,7 @@ const Postcart = () => {
             <div className="left-[307.46px] top-[288.48px] absolute text-[#fb2448] text-xs font-normal font-['Josefin Sans'] line-through">$65.00</div>
             <div className="w-40 h-px left-0 top-[305.04px] absolute border-2 border-[#eeeffb]"></div>
             <div className="w-96 h-64 left-0 top-0 absolute bg-[#f7f7f7]" />
-            <img className="w-56 h-56 left-[73px] top-[33px] absolute" src={`/post-2/${item}.svg`} />
+            <Image className="w-56 h-56 left-[73px] top-[33px] absolute" src={`/post-2/${item}.svg`} alt='post-2' width={400}height={400} />
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ const Postcart = () => {
     {['1', '2', '3', '4'].map((item, index) => (
       <div key={index} className="w-64 h-80 relative">
         <div className="w-64 h-80 left-0 top-0 absolute bg-white shadow">
-          <img className="w-16 h-16 left-[50%] top-[20%] absolute transform -translate-x-1/2" src={`/support/${item}.svg`} alt="Support Image" />
+          <Image className="w-16 h-16 left-[50%] top-[20%] absolute transform -translate-x-1/2" src={`/support/${item}.svg`} alt="Support Image" width={400}height={400} />
           <div className="w-56 h-32 left-[27px] top-[148px] absolute">
             <div className="left-[42px] top-0 absolute text-[#151875] text-xl font-semibold font-['Josefin Sans']">24/7 Support</div>
             <div className="w-56 h-20 left-0 top-[42px] absolute text-center text-[#1a0b5b]/30 text-base font-bold font-['Lato'] leading-relaxed">

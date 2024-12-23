@@ -1,5 +1,8 @@
 import React from 'react'
-import { GlobeAltIcon, CurrencyDollarIcon, UserIcon, HeartIcon  } from '@heroicons/react/24/solid';
+import { GlobeAltIcon, CurrencyDollarIcon, UserIcon, HeartIcon,   } from '@heroicons/react/24/solid';
+import { ShoppingCartIcon } from '@heroicons/react/24/outline'; // Outline set
+
+
 
 
 
@@ -29,14 +32,19 @@ const Headingbar = () => {
           <CurrencyDollarIcon className="h-5 w-5 mr-2" />
            USD
         </div>
-        <div className="text-[#f1f1f1] text-sm sm:text-base font-semibold font-['Josefin Sans'] cursor-pointer flex items-center">
+        <a href="/Login"  className="text-[#f1f1f1] text-sm sm:text-base font-semibold font-['Josefin Sans'] cursor-pointer flex items-center">
           <UserIcon className="h-5 w-5 mr-2" />
-           Login
-        </div>
+           Login 
+        </a>
         <div className="text-[#f1f1f1] text-sm sm:text-base font-semibold font-['Josefin Sans'] cursor-pointer flex items-center">
           <HeartIcon className="h-5 w-5 mr-2" />
            Wishlist
         </div>
+          {/* Cart */}
+          <a href="/Cart" className="cursor-pointer hover:text-gray-200">
+<ShoppingCartIcon className="h-7 w-7  text-[#f1f1f1]" />
+
+          </a>
       </div>
     </div>
   </div>

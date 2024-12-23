@@ -27,10 +27,10 @@ const Promotional = () => {
 
   {/* "Shop Now" Button */}
   <div className="absolute top-[70%] left-[10%] md:left-[20%] lg:top-[478px] lg:left-[375px]">
-    <div className="w-40 h-12 bg-[#fb2e86] rounded-sm">
-      <span className="absolute cursor-pointer text-white text-base font-semibold font-['Josefin Sans'] top-3 left-10">
+    <div className="w-40 h-12 bg-[#fb2e86] rounded-sm ">
+      <button className="absolute  text-white text-base font-semibold font-['Josefin Sans'] top-3 left-10">
         Shop Now
-      </span>
+      </button>
     </div>
   </div>
 

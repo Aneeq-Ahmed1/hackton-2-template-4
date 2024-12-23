@@ -1,33 +1,128 @@
 import React from 'react'
-import { HeartIcon } from '@heroicons/react/24/solid'; // Importing the Heart icon
 import Image from 'next/image';
+import Link from 'next/link';
+
+
+
+
+// import Products from './Products';
+
+
+
 const Nav = () => {
   return (
-//     <div className="w-96 h-10 relative">
-//   <div className="left-[264px] top-[10px] absolute text-[#0d0e43] text-base font-normal font-['Lato'] leading-tight">Pages</div>
-//   <div className="left-[340px] top-[10px] absolute text-[#0d0e43] text-base font-normal font-['Lato'] leading-tight">Products</div>
-//   <div className="left-[439px] top-[10px] absolute text-[#0d0e43] text-base font-normal font-['Lato'] leading-tight">Blog </div>
-//   <div className="left-[506px] top-[10px] absolute text-[#0d0e43] text-base font-normal font-['Lato'] leading-tight">Shop</div>
-//   <div className="left-[577px] top-[10px] absolute text-[#0d0e43] text-base font-normal font-['Lato'] leading-tight">Contact</div>
-//   <div className="w-80 h-10 left-[860px] top-0 absolute">
-//     <div className="w-80 h-10 left-0 top-0 absolute border-2 border-[#e7e6ef]" />
-//     <div className="w-12 h-10 left-[266px] top-0 absolute bg-[#fb2e86]" />
-//   </div>
-//   <div className="left-0 top-[3px] absolute text-[#0d0e43] text-4xl font-bold font-['Josefin Sans']">Hekto</div>
-//   <div className="left-[186px] top-[10px] absolute text-[#fb2e86] text-base font-normal font-['Lato'] leading-tight">Home</div>
-//   <div className="w-3 h-3 left-[231px] top-[14px] absolute" />
-//   <div className="w-6 h-6 left-[1140px] top-[8px] absolute">
-//     <div className="w-5 h-5 left-[1.98px] top-[1.98px] absolute" />
-//   </div>
-// </div>
 
+<div className="bg-white p-8">
+  {/* Container */}
+  <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto px-4">
+    {/* Logo */}
+    <div>
+      <Image src="/hekto.svg" alt="Hekto Logo" width={98} height={34} />
+    </div>
+        {/* <Link href="about" target="_blank">About</Link> */}
 
+    {/* Navigation Links */}
+    <div className="hidden md:flex items-center gap-12 text-sm font-medium">
+      <Link
+        href="/"
+        className="text-pink-500 hover:text-pink-500 flex items-center ${myFont.className}"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+          
+        }}
+      > Home<span className="text-gray-800 ml-1 text-lg">&#x25BC;</span>
+      </Link>
 
+      <Link
+        href="/"
+        className="text-gray-800 hover:text-pink-500"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+        }}
+      >
+        Pages
+      </Link>
 
-<div className='flex justify-center m-4'>
-  <Image src={"/nav bar.svg"} alt='nav' width={1177} height={120}
-  className='cursor-pointer'/>
+      <Link
+        href="/ProductDetails"
+        className="text-gray-800 hover:text-pink-500"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+        }}
+      >
+        Products
+      </Link>
+
+      <Link
+        href="/Blog"
+        className="text-gray-800 hover:text-pink-500"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+        }}
+      >
+        Blog
+      </Link>
+
+      <Link
+        href="Shop"
+        className="text-gray-800 hover:text-pink-500"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+        }}
+      >
+        Shop
+      </Link>
+
+      <Link
+        href="Contact"
+        className="text-gray-800 hover:text-pink-500"
+        style={{
+          fontFamily: "Lato, sans-serif",
+          fontWeight: "400",
+          fontSize: "16px",
+          width: "57px",
+        }}
+      >
+        Contact
+      </Link>
+    </div>
+
+    {/* Mobile Hamburger Menu (optional) */}
+    <div className="md:hidden flex items-center">
+      <button className="text-gray-800 hover:text-pink-500">
+        {/* Add your hamburger menu icon here */}
+      </button>
+    </div>
+
+    {/* Search Bar */}
+    <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
+      <input
+        type="text"
+        placeholder="Search"
+        className="px-4 py-2 w-full sm:w-64 text-sm focus:outline-none"
+      />
+      <button className="bg-pink-500 px-4 py-3 flex items-center justify-center">
+        <Image src="/search.svg" alt="search icon" width={16} height={16} />
+      </button>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
 
 
 
