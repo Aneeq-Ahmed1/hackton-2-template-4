@@ -10,27 +10,34 @@ const Trending = () => {
     Trending Products
   </div>
 
-  {/* Product Cards Container */}
-  <div className="flex flex-wrap justify-center mt-8">
-    {/* Product Cards */}
-    {['1', '2', '3', '4'].map((item, index) => (
-      <div key={index} className="w-full sm:w-1/3 lg:w-1/4 p-2">
-        <div className="w-64 h-96 relative">
-          <div className="w-64 h-96 absolute left-0 top-0 bg-white shadow" />
-          <div className="w-64 h-60 absolute left-0 top-0 bg-[#f6f7fb]" />
-          <div className="absolute left-[71px] top-[251px] text-[#fb2e86] text-lg font-bold font-['Lato']">
-            Cantilever chair
-          </div>
-          
-          <div className="absolute left-[115px] top-[327px] text-[#151875] text-sm font-normal font-['Lato']">
-            $26.00
-          </div>
-          <Image className="w-44 h-44 absolute left-[40px] top-[46px]" src={`/post-3/${item}.svg`} alt="Cantilever Chair" width={400}height={400} />
+   {/* Product Cards Container */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 w-full px-4">
+          {/* Product Cards */}
+           {["1", "2", "3", "4"].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center"
+            >
+              <div className="w-full h-60 bg-[#f6f7fb]"></div>
+              <Image
+                className="mt-[-50px]"
+                src={`/post-3/${item}.svg`}
+                alt="Cantilever Chair"
+                width={150}
+                height={150}
+              />
+              <div className="text-center mt-4">
+                <p className="text-[#fb2e86] text-lg font-bold font-['Lato']">
+                  Cantilever chair
+                </p>
+                <p className="text-[#151875] text-sm font-normal font-['Lato']">
+                  $26.00
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    ))}
-  </div>
-  
+ 
   <div className="flex flex-wrap justify-center gap-4 m-4">
   {/* Card 1 */}
   <div className="w-full sm:w-96 h-64 bg-[#fff6fb] shadow flex items-center justify-between px-4 p-8">
@@ -164,7 +171,7 @@ const Trending = () => {
   <Image src="/post-3/13.png" alt="aa" width={400}height={400}/>
   <Image src="/post-3/14.png" alt="aa" width={400}height={400}/>
 </div>
-<Image className="w-full h-full" src="post-3/15.svg" alt='post-15' width={400}height={400} />
+<Image className="cursor-pointer w-full h-full" src="post-3/15.svg" alt='post-15' width={400}height={400} />
 
 <Image className="py-6" src="post-3/16.svg" alt='post-16' width={904}height={93}/>
 
@@ -180,28 +187,13 @@ const Trending = () => {
 <Image src={"/post-3/Leatest-2.svg"} alt='product-1' width={384} height={384}/>
 <Image src={"/post-3/Leatest-3.svg"} alt='product-1' width={384} height={384}/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 </div>
-
 </div>
-
-
 
 
   )
 }
 
 export default Trending
+
