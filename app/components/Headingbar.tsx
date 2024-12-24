@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import { GlobeAltIcon, CurrencyDollarIcon, UserIcon, HeartIcon } from '@heroicons/react/24/solid';
-import { ShoppingCartIcon, Bars3Icon } from '@heroicons/react/24/outline'; // Added Bars3Icon (hamburger icon)
+import { ShoppingCartIcon,  } from '@heroicons/react/24/outline'; // Added Bars3Icon (hamburger icon)
 
 const Headingbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // state to toggle the menu
+  const [isMenuOpen, ] = useState(false); // state to toggle the menu
 
   return (
     <div className="flex flex-col text-base font-semibold whitespace-nowrap text-zinc-100">
